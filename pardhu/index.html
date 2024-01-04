@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Regisration Form </title> 
+</head>
+<body>
+    
+    <div class="container">     
+        <center><header><h3><b>CIS Guest House Regisration Form</h3></b></header></center>
+
+        <form action="#" onsubmit="showAlert()">
+            <div class="form">
+                <div class="Guest House">
+                    <span class="title">Guest House Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name of lease holder</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter email" required maxlength="50" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                        </div>
+
+                        <div class="input-field">
+                            <label>GH Full Address</label>
+                            <input type="text" placeholder="Enter GH Address" required>
+                        </div>                      
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="tel" pattern="[0-9]{10}"  maxlength= "10" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Male and Female</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter your ccupation" required>
+                        </div>
+                    
+                               
+                        <div class="input-field">
+                            <label>Number of Lease Holders</label>
+                            <input type="number" placeholder="cannot be more than 3" pattern="[0-3]{4}" maxlenght="3" required>
+                        </div>
+
+                        <div class="input-field">
+                                <label>Payment</label>
+                                <select required>
+                                    <option disabled selected>Select Payment method</option>
+                                    <option>Credit card (3% charges) </option> 
+                                    <option>debit card</option>
+                                    <option>cheque payment</option>
+                                </select>
+                            </div>
+
+                        <div class="input-field">
+                            <label>Select branch</label>
+                            <select required>
+                                <option disabled selected>Select Branch</option>
+                                <option>Allen </option> 
+                                <option>Little elm</option>
+                                <option>Houston</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Type of House</label>
+                            <select required>
+                                <option disabled selected>Select Type of house</option>
+                                <option>Town home </option> 
+                                <option>studio aptmts</option>
+                                <option>single</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Lease Start Date</label>
+                            <input type="date" placeholder="Enter your Start date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Lease End Date</label>
+                            <input type="date" placeholder="Enter end date" required>
+                        </div>
+
+                        <div class="input-field">
+                                <label>Student Capacity</label>
+                                <input type="number" placeholder="Cannot be more than 30"  minlength="1" maxlength="30" required>
+
+                        </div>               
+                        
+                        <div class="input-field">
+                            <label>Bank Account number</label>
+                            <input type="tel" pattern="[0-9]{10}"  maxlength= "10" placeholder="Account Number" required >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Routing number</label>
+                            <input type="number / text" placeholder="Enter Routing number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Type of account</label>
+                            <select required>
+                                <option disabled selected>Select Type of Account</option>
+                                <option>Savings </option> 
+                                <option>Checking </option>
+                                <option>Business</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Select Bank</label>
+                            <select required>
+                                <option disabled selected>Select Bank</option>
+                                <option>chase </option> 
+                                <option>BOFA </option>
+                                <option>BOA</option>
+                                <option>America</option>
+                                <option>stateofusa</option>
+                            </select>
+                        </div>
+                        <div class="buttons">
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+    <script>
+        function showAlert() {
+            alert("Form submitted successfully! see you soon in the guest house");
+        }
+    </script>
+</body>
+</html>
